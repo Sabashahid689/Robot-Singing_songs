@@ -1,0 +1,62 @@
+body {
+  background: linear-gradient(135deg, #1b2735, #090a0f);
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: rgba(255,255,255,0.1);
+  padding: 20px 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255,255,255,0.2);
+}
+
+.robot {
+  margin: 40px auto;
+  width: 200px;
+  height: auto;
+}
+
+.robot-img {
+  width: 200px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 0 25px cyan;
+  animation: dance 2s infinite alternate;
+  transition: transform 0.3s ease-in-out;
+}
+
+.robot-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 35px #00e5ff;
+}
+
+.player {
+  margin-top: 20px;
+}
+
+.controls button {
+  background: #00bcd4;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.controls button:hover {
+  background: #0288d1;
+}
+
+@keyframes dance {
+  from { transform: translateY(0); }
+  to { transform: translateY(-20px); }
+}

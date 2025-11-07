@@ -1,0 +1,6 @@
+robot-singer/
+├── index.html
+├── style.css
+├── script.js
+└── songs/
+    └── e6af56ec-907c-49cb-8fb1-cbde43698131.mp3
